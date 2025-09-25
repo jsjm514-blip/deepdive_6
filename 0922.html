@@ -30,7 +30,7 @@
             text-align: justify;
         }
         .btn-container {
-            outline: 1px solid red;
+            outline: 0px solid red;
             position: fixed;
             /* top,bottom,right,left */
             bottom: 40px;
@@ -48,6 +48,7 @@
             background-position: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15);
             cursor: pointer;
+            vertical-align: middle;
         }
         .btn:hover {
             background-color: #f3f3f3;
@@ -55,11 +56,25 @@
         }
         .btn-top {
             background-image: url(./images/icons/arrow-top.svg);
-            margin-right: 16px;
+            margin-right: 8px;
             /* 해당요소에 우측 여백을 지정 */
         }
         .btn-setting {
             background-image: url(./images/icons/setting.svg);
+        }
+        .setting-popup {
+            background-color: white;
+            width: 320px;
+            height: 502px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .25);
+            box-sizing: border-box;
+            padding: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            position: fixed;
+            bottom: 90px;
+            right: 40px;
+            display: none;
         }
 
     </style>
@@ -367,6 +382,13 @@
             est, nihil sequi alias beatae facilis, magni voluptate modi nisi ex! Cum debitis explicabo vel?
         </p>
     </div>
+    <section class="setting-popup">
+        <h1>글자크기</h1>
+        <button type="button" class="close-sbtn">
+            <span>설정 닫기</span>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </section>
     <div class="btn-container">
         <a href="#" class="btn btn-top">
             <span class="blind">위로가기</span>
@@ -375,5 +397,18 @@
             <span class="blind">설정</span>
         </button>
     </div>
+    <script>
+        const btnSetting = document.querySelector('.btn-setting');
+        const settingPopup = document.querySelector('.setting-popup')
+        const closeSetting = document.querySelector('.close-sbtn')
+        btnSetting.addEventListener('click',() => {
+            settingPopup.style.display="block"
+            btnSetting.style.backgroundColor = '#03c75a'
+        })
+        closeSetting.addEventListener('click', () => {
+            settingPopup.style.display = "none"
+            btnSetting.style.backgroundColor = 'white'
+        })
+    </script>
 </body>
 </html>
