@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics button</title>
+    <script src="https://kit.fontawesome.com/1bb0ce4fa7.js" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            /* 폰트종류 : Chalkboard */
+            font-family: 'Chalkboard';
+        }
+        i {
+            font-size: 24px;
+            color: hsl(215, 49%, 71%);
+        }
+        .card-btn {
+            background-color: white;
+            height: 70px;
+            width: 300px;
+            display: block;
+            padding: 1rem;
+            cursor: pointer;
+            margin-right: 16px;
+            border-radius: 8px;
+            box-shadow: 0 8px hsl(227, 13%, 79%);
+            margin-right: 20px
+        }
+        .card-btn:hover {
+            border-radius: 8px;
+            border: 2px solid hsl(208, 70%, 48%);
+            box-shadow: 0 8px hsl(208, 70%, 48%);
+
+        }
+        .title {
+            font-family: 'Chalkboard';
+            font-size: 20px;
+            color: hsl(215, 55%, 21%);
+            
+        }
+        .card-btn i {
+            margin-right: 8px
+        }
+        .card-btn:hover i {
+            color: hsl(222, 17%, 46%);
+        }
+    </style>
+</head>
+<body>
+    <h1>My font - Chalkboard <i class="fa-solid fa-thumbs-up fa-beat"></i></h1>
+    <h2>Default font</h2>
+    <a href="#" class="card-btn">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span class="title">Basics</span>
+    </a>
+</body>
+</html>
