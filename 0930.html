@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naver 약관동의</title>
     <style>
+        .header-group {
+            width: 380px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin: 8px 0;
+        }
         h1 {
             font-size: 17px;
             margin-bottom: 2px;
@@ -39,28 +46,30 @@
         }
         h2 {
             margin: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 6px;
         }
         .button {
             border: 1px solid #d6d6d6;
             padding: 3px 6px;
-            width: 98px;
-            height: 28px;
             font-size: 12px;
             border-radius: 16px;
-            margin-left: 38px;
         }
     </style>
 </head>
 <body> 
     <h1>개인정보 수집 및 이용</h1>
     <section>
-        <h2>
+        <div class="header-group">
+            <h2>
             <strong>[필수]</strong>
             <span>개인정보 수집 및 이용</span>
-            <a href="#">전체</a>
+            <a href="#">전체</a></h2>
             <a href="#" class="button">
             👧🏻어린이용 안내</a>
-        </h2>
+        </div>
         <div class="scroll-area">
             <p>개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</p>
             <h3>1. 수집하는 개인정보</h3>
