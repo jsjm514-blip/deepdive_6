@@ -6,16 +6,50 @@
     <title>yumin_toons</title>
     <link rel="stylesheet" href="./css/reset.css">
     <style>
-
+        :root {
+            --color-primary : #3757d9;
+            --color-text: #151515;
+            --text-large : 24px;
+        }
+        body {
+            background-image: url(./images/ocean_background.jpg);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        .page-header {
+            text-align: center;
+            margin: 30px 0;
+        }
+        a {
+            padding: 20px;
+            font-weight: bold;
+            color: var(--color-text);
+            font-size: var(--text-large);
+        }
+        .line {
+            width: auto;
+            color: var(--color-text);
+            height: 2px;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
-    <div class="MENU">
+    <header class="page-header">
         <a href="#">COMPANY</a>
         <a href="#">CAREERS</a>
         <a href="#">CONTACT</a>
         <a href="#">MEDIA</a>
         <a href="#">IMPACT</a>
-    </ㅇ>
+    </header>
+    <script>
+        const btn = document.querySelector('.page-header') 
+        let isOn = false; 
+        
+        btn.addEventListener('click', () => { 
+            isOn = !isOn
+            document.documentElement.style.setProperty('--color-primary', isOn ? '#151515' : '#3757d9' )
+            document.documentElement.style.setProperty('--color-text', isOn ? '#3757d9' : '#151515' ) })
+    </script>
 </body>
 </html>
