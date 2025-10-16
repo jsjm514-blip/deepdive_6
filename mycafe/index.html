@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cappuchino Latte</h1>
+        <h2>부드러운 거품의 카푸치노를 만나보세요</h2>
+
+        <p class="price">0</p>
+
+        <h3>수량을 선택하세요</h3>
+        <div class="count-container">
+            <button type="button" id="decrease">-</button>
+            <span id="number">1</span>
+            <button type="button" id="increase">+</button>
+        </div>
+
+        <button type="button" id="order">Add to Order</button>
+
+        <div class="total-container">
+            <h4>Total price</h4>
+            <strong id="price-total">0</strong>
+        </div>
+    </div>
+
+    <script>
+        // 변수초기화
+        const decrease = document.getElementById('decrease')
+        const increase = document.getElementById('increase')
+        const num = document.getElementById('number')
+        const order = document.getElementById('order')
+        const total = document.getElementById('price-total') 
+        const unitPrice = document.querySelector('.price') /* 이거 빼먹음 */
+        let count = 1
+        let price = 4500; /* 이거 빼먹음 */
+        total.textContent = count * price
+        unitPrice.textContent = `${price}`
+        num.textContent = `${count}`
+
+
+
+        
+        // 여기서부터 '스크립트가이드문서.html' 을 참조하여 작성하세요
+        decrease.addEventListener('click',() => {
+            count = count - 1;
+            console.log(count)
+            num.textContent = count
+        })
+        increase.addEventListener('click',() => {
+            count = count + 1;
+            console.log(count)
+            num.textContent = count
+        })
+        order.addEventListener('click',() => {
+            const totalPrice = count * price
+            total.textContent = totalPrice
+        })
+
+    </script>
+</body>
+
+</html>
