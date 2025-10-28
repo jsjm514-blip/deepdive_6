@@ -28,6 +28,9 @@
         const btn = document.getElementById('btn');
 
         // Step 01 - 두수의 합을 구하시오
+        // Step 02 - 조건 : 1~100까지만 입력이 되도록, "1~100까지의 수만 입력하세요"
+        // Step 03 - 1~100의 범위를 벗어난 숫자를 입력하면, 버튼 클릭시 결과대신 '오류메세지'를 출력하세요
+        // 예시 ) "1 ~ 100 사이의 숫자만 입력가능합니다. 
         function sum (a,b) {
             a = Number(x.value)
             b = Number(y.value)
@@ -38,10 +41,7 @@
             }
             else {err.textContent = "1~100 사이의 숫자만 입력가능합니다."}
         }
-        btn.onclick = sum;
-        // Step 02 - 조건 : 1~100까지만 입력이 되도록, "1~100까지의 수만 입력하세요"
-        // Step 03 - 1~100의 범위를 벗어난 숫자를 입력하면, 버튼 클릭시 결과대신 '오류메세지'를 출력하세요
-        // 예시 ) "1 ~ 100 사이의 숫자만 입력가능합니다. 
+        btn.addEventListener('click', sum)
     </script>
 </body>
 
