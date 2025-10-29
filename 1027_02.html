@@ -31,17 +31,27 @@
         // Step 02 - 조건 : 1~100까지만 입력이 되도록, "1~100까지의 수만 입력하세요"
         // Step 03 - 1~100의 범위를 벗어난 숫자를 입력하면, 버튼 클릭시 결과대신 '오류메세지'를 출력하세요
         // 예시 ) "1 ~ 100 사이의 숫자만 입력가능합니다. 
-        function sum (a,b) {
-            a = Number(x.value)
-            b = Number(y.value)
-            let result = a+b
-            z.textContent = result
-            if ( 1<=a && 100>=a && 1<=b && 100>=b) {
-            err.textContent = "";
+        function sum() {
+
+            let num1 = Number(x.value)
+            let num2 = Number(y.value)
+            if (1 <= num1 && 100 >= num1 && 1 <= num2 && 100 >= num2) {
+                let result = num1 + num2;
+                z.textContent = result
+                err.textContent = "";
             }
-            else {err.textContent = "1~100 사이의 숫자만 입력가능합니다."}
+            else {
+                z.textContent = '?'
+                err.textContent = "1~100 사이의 숫자만 입력가능합니다."
+            }
         }
         btn.addEventListener('click', sum)
+
+        function div(a, b) {
+            return a / b
+        }
+
+        console.log(div(10, 5))
     </script>
 </body>
 
