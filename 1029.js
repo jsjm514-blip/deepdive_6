@@ -8,6 +8,8 @@ user. forEach ((name, idx) => {
     if (idx === 2 ) {console.log(`${idx+1}번째 users는 ${name}입니다.`)}
 })
 
+//user. forEach(function(user,idx){}) -> 이렇게 써도 됨
+
 user. forEach ((name, idx) => {
     if (idx === userIndex-1) {console.log(`${userIndex}번째 users는 ${name}입니다.`)}
 })
