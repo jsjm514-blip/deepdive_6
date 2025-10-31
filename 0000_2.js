@@ -41,3 +41,33 @@ for(let i=5; i>=1; i--) {
 }
 
 //10
+const arr4 = ['a', 'b', 'c'];
+arr4.forEach(x =>console.log(x.toUpperCase()));
+
+
+//for문 실전 퀴즈
+
+//01
+const arr5 = [1, 2, 3, 4, 5];
+let sum = 0;
+for(let i=0; i < arr5.length; i++) {
+  sum += arr5[i];
+}
+console.log(sum);
+
+//02
+const arr6 = [7, 2, 9, 4];
+let max = arr6[0];
+for(const a of arr6) {
+    if (a>max) max=a;
+}
+console.log(max)
+
+//03
+const arr7 = [1, 2, 3, 4, 5, 6];
+let x = 0
+arr7.forEach(x=>{
+    if(x%2===0){console.log(x)}
+})
+
+//04
