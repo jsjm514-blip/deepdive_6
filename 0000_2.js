@@ -70,4 +70,21 @@ arr7.forEach(x=>{
     if(x%2===0){console.log(x)}
 })
 
+
+//for문 심화 퀴즈
+
 //04
+const users = [
+  { name: 'Ghost', age: 20 },
+  { name: 'Camel', age: 21 }];
+
+users.forEach(u=> {
+    if(u.age>=21){console.log(u.name)}
+})
+
+//for문 고급 퀴즈
+
+//01
+for(let i=1;i<=100;i++) {
+    if(i%3===0 && i%5===0){console.log(i)}
+}
