@@ -88,3 +88,10 @@ users.forEach(u=> {
 for(let i=1;i<=100;i++) {
     if(i%3===0 && i%5===0){console.log(i)}
 }
+
+//07
+const arr8 = [10, 20, 30, 40];
+for(let i=0;i<arr8.length;i++) {
+    result = arr8[i]*arr8[i]
+    console.log(result)
+}
