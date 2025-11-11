@@ -102,3 +102,19 @@ function solution9(scores){
     return scores.filter(x=>x>=60).map(x=>x*2);
 }
 console.log(solution9([50, 60, 70, 80]));
+
+console.clear()
+
+//Array 연습퀴즈 3
+//01 -> 이거 모르겠음
+function solution10(my_string) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return my_string.split('').filter(x => !vowels.includes(x)).join('');
+}
+console.log(solution10('beautiful')); // 'btfl'
+
+//02
+function solution11(names) {
+    return 
+}
+console.log(solution11(['Irangi', 'Camel', 'Mui'])); // ['IRANGI', 'CAMEL', 'MUI']
