@@ -5,27 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Album 만들기</title>
     <style>
-        .btn-mode {
-            border-radius: 50%;
+        body {
+            background-color: #b1e5db;
+            background-image: url("./images/bg_stars.png");
+            background-size: 500px auto;
         }
-
-        .card {
+        button {
+            cursor: pointer;
+            border: none;
+        }
+        .album-container {
             border-radius: 20px;
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 20px 0 rgba(24,139,147,0.25);
             padding: 20px;
             width: 300px;
+            background-color: white;
+            
         }
-        
-        .main {
-            border-radius: 10px;
+        .album-view {
+            width: 170px;
             height: 300px;
-
+            background-color: #ffd6d4;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .btn-thumb {
-            height: 60px;
+        .mode-btn {
+            border-radius: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .album-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 7px;
+        }
+        .album-list button {
             width: 60px;
-        }
+            height: 60px;
+            border-radius: 10px;
 
-    
+        }
+        .album-list img {
+            width: 36px;
+        }
+        .album-list button:hover {
+            border: 2px solid balck;
+        }
+        .album-list button:nth-child(1){
+            background-color: #ffd6d4;
+        }
+        .album-list button:nth-child(2){
+            background-color: #c4d39f;
+        }
+        .album-list button:nth-child(3){
+            background-color: #bce0ff;
+        }
+        .album-list button:nth-child(4){
+            background-color: #d4c4da;
+        }
+        .album-contents h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .album-contents p {
+            font-size: 14px;
+            text-align: justify;
+        }
+    /* 140p부터 다시 하면 됨 */
 
     </style>
 </head>
@@ -45,16 +100,16 @@
         </div>
         <section class="album-list">
             <button type="button">
-                <img src="./images/thumb_1.png" alt="" class="01">
+                <img src="./images/thumb_1.png" alt="" class="card1">
             </button>
             <button type="button">
-                <img src="./images/thumb_2.png" alt="" class="02">
+                <img src="./images/thumb_2.png" alt="" class="card2">
             </button>
             <button type="button">
-                <img src="./images/thumb_3.png" alt="" class="03">
+                <img src="./images/thumb_3.png" alt="" class="card3">
             </button>
             <button type="button">
-                <img src="./images/thumb_4.png" alt="" class="04">
+                <img src="./images/thumb_4.png" alt="" class="card4">
             </button>
         </section>
         <div class="album-contents">
