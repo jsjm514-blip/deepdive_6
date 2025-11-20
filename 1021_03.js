@@ -16,3 +16,37 @@ function shopDiscount (member,price) {
 shopDiscount (true, 55000)
 
 //03
+function attraction(age,height) {
+    const x= age >= 7;
+    const y= height>150
+    const result = x && y ? "가능" : "불가능"
+    console.log(`${age}살,키 ${height}cm이면 놀이기구에 탑승이 ${result}합니다. `)
+}
+attraction(6,151)
+
+//04
+function deciedActive(degree,weather) {
+    const a = degree >=30;
+    const b = weather === "rain" && "typhoon"
+    const result = a || b ? "실내활동을 한다" : "실외활동을 한다"
+    console.log(result)
+}
+deciedActive(28,"rain")
+
+//05
+function nextlevel (quest,reward) {
+    const a = quest === "done";
+    const b = reward === "get"
+    const result = a||b?"다음단계로 넘어간다":"다음단계로 넘어가지 못한다"
+    console.log(result)
+}
+nextlevel("done","none")
+
+//06
+function takeRetest(math,science) {
+    const score = math || science >=80;
+    console.log(`재시험`)
+}
+takeRetest(77,90)
+
+//07
