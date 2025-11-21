@@ -50,3 +50,15 @@ function takeRetest(math,science) {
 takeRetest(77,90)
 
 //07
+function checkService(agree) {
+    const result= !agree ? "서비스 이용이 제한됩니다.":"서비스를 이용할 수 있습니다.";
+    console.log(result);
+}
+checkService(false)
+
+//08
+function goOutside(umbrella,rain) {
+    const result = !umbrella || !rain ? "외출하지않는다" : "외출한다"
+    console.log(result)
+}
+goOutside(true,false)
