@@ -62,3 +62,9 @@ function goOutside(umbrella,rain) {
     console.log(result)
 }
 goOutside(true,false)
+
+//09
+function giveDemerit (score,task) {
+    const result = socre <=20
+    const b = 
+}
