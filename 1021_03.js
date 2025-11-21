@@ -72,7 +72,7 @@ giveDemerit(35,true)
 
 //10
 function delayTest(range,reference,time) {
-    const result = !range && !reference || !time ? "시험을 연기한다" : "시험을 그대로 진행한다"
+    const result = !range && !reference && !time ? "시험을 연기한다" : "시험을 그대로 진행한다"
     console.log(result)
 }
 delayTest(true,true,false)
